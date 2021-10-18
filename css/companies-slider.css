@@ -1,0 +1,109 @@
+.companies-slider {
+    margin-bottom: 46px;
+    margin-top: 45px;
+}
+
+.companies-slider__swiper {
+    position: relative;
+    padding-bottom: 39px;
+}
+
+.companies-slider__container {
+    padding: 0 45px;
+}
+
+.companies-slider__pagination {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50% !important;
+    bottom: 0px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.companies-slider__pagination-bullet_active {
+    width: 9px !important;
+    height: 9px !important;
+    background: #3F2323 !important;
+}
+
+.companies-slider__pagination-bullet {
+    background: #E2DAD5;
+    height: 6px;
+    width: 6px;
+    margin: 0 7px;
+    border-radius: 100px;
+}
+
+.companies-slider__slide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.companies-slider__text {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #898989;
+    margin: 20px 0;
+    letter-spacing: -0.5px;
+    padding: 0 10px;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .companies-slider {
+        margin-bottom: 45px;
+    }
+
+    .companies-slider__swiper {
+        padding: 0 60px 40px 60px;
+        overflow: hidden;
+    }
+
+    .companies-slider__slide {
+        justify-content: space-between;
+        height: 100% !important;
+        min-height: 120px;
+    }
+
+    .companies-slider__text {
+        padding: 0 2px;
+        margin: 0;
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .companies-slider {
+        margin-bottom: 5px;
+        margin-top: 65px;
+    }
+
+    .companies-slider__swiper-wrapper {
+        transform: translate3d(0px, 0, 0) !important;
+    }
+
+    .companies-slider__swiper {
+        padding: 0 100px 60px 100px;
+    }
+
+    .companies-slider__container {
+        width: 100%;
+        max-width: 1330px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .companies-slider__pagination {
+        display: none !important;
+    }
+
+    .companies-slider__slide:nth-child(3) .companies-slider__text {
+        padding: 0;
+    }
+}

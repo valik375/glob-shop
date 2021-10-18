@@ -1,0 +1,60 @@
+.inspiration {
+    margin-top: 45px;
+}
+
+.inspiration__swiper-wrapper {
+    padding-bottom: 26px;
+}
+
+.inspiration__swiper {
+    overflow: visible;
+}
+
+.inspiration__swiper-img-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+.inspiration__swiper-scrollbar {
+    height: 4px !important;
+    background: #EAE9E8;
+    border-radius: 100px;
+}
+
+.inspiration__swiper-scrollbar .swiper-scrollbar-drag {
+    background: #555555;
+    border-radius: 100px;
+}
+
+.inspiration__swiper-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inspiration__swiper-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #0C0C0C;
+    min-height: 54px;
+}
+
+.inspiration__swiper-scrollbar {
+    bottom: 0;
+}
+
+@media only screen and (min-width: 700px) {
+    .inspiration__swiper-img-wrapper {
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .inspiration {
+        margin-top: 65px;
+    }
+}

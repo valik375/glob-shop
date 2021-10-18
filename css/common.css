@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../fonts/TTCommons-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../fonts/TTCommons-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quiza Pro';
+    src: url('../fonts/Quiza-Pro-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'TT Commons', sans-serif;
+    overflow-x: hidden;
+}
+
+.body_hidden {
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.section-ttl-wrapper {
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-ttl {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    color: #0C0C0C;
+}
+
+.section-ttl-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: #0C0C0C;
+}
+
+.section-ttl-wrapper:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 100px;
+    display: flex;
+    background: #D8D8D8;
+    content: '';
+}
+
+.g-btn {
+    width: 100%;
+    background: #FC654C;
+    border-radius: 10px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+
+    font-family: TT Commons, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.shop-card {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.shop-card::-webkit-scrollbar {
+    height: 4px;
+    background: #555555;
+    border-radius: 100px;
+}
+
+.shop-card::-webkit-scrollbar-track {
+    background: #EAE9E8;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+}
+
+.shop-card::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 100px;
+}
+
+.shop-card__wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1060px;
+}
+
+.shop-card__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.shop-card__bestseller {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    padding: 6px 10px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D8D2C0;
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+.shop-card__heart {
+    width: 35px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.shop-card__img-wrapper {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 14px;
+}
+
+.shop-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.shop-card__item-ttl {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #282828;
+    margin-bottom: 5px;
+}
+
+.shop-card__item-rating {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.shop-card__item-stars {
+    margin-right: 8px;
+}
+
+.shop-card__item-rating-count {
+    transform: translateY(2px);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FC654C;
+}
+
+.shop-card__item-cost {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-card__item-price {
+    font-size: 26px;
+    line-height: 30px;
+    color: #282828;
+}
+
+.shop-card__item-cart-btn {
+    background: #FC654C;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 66px;
+    height: 28px;
+    padding-top: 4.5px;
+    transform: translateY(-2px);
+}
+
+.shop-card__sale {
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.shop-card__save {
+    font-size: 13px;
+    line-height: 15px;
+    color: #F93F3F;
+    width: 64px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(249, 63, 63, 0.12);
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.shop-card__money {
+    font-size: 13px;
+    line-height: 15px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 444px) {
+    .shop-card__img {
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .shop-card__img {
+        object-fit: cover;
+    }
+
+    .shop-card__wrapper {
+        max-width: 1058px ;
+    }
+
+    .shop-card__item-cart-btn {
+        width: 60px;
+    }
+
+    .shop-card__sale {
+        margin-top: 7px;
+    }
+
+    .shop-card__img-wrapper {
+        margin-bottom: 26px;
+    }
+}
+
+@media only screen and (min-width: 930px) {
+    .shop-card__img {
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+
+    .shop-card {
+        overflow-x: initial;
+    }
+
+    .shop-card__wrapper {
+        width: 100%;
+        max-width: 1160px;
+    }
+
+    .container {
+        padding: 0;
+        width: 100%;
+        max-width: 1160px;
+    }
+
+    .section-ttl-link {
+        display: none;
+    }
+
+    .section-ttl-link_visible {
+        display: block;
+    }
+
+    .section-ttl-wrapper {
+        justify-content: flex-start;
+        padding-bottom: 14px;
+    }
+
+    .section-ttl {
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 31px;
+        color: #0C0C0C;
+    }
+
+    .shop-card__img {
+        object-fit: cover;
+    }
+}
